@@ -1,6 +1,6 @@
 import { Application, Request, Response, Router } from "express";
 import homeController from "../controller/homeController";
-
+import homeMongoController from "../controller/homeMongoController";
 
 const router: Router = Router();
 
@@ -20,12 +20,12 @@ let initWebRoutes = (app: Application) => {
     router.get('/delete-crud', homeController.deleteCRUD);
 
     // MONGODB ROUTES
-    // router.get('/crud-mongo', homeController.getCRUD);
-    // router.post('/post-crud-mongo', homeMongoController.postCRUDMongo);
-    // router.get('/get-crud-mongo', homeMongoController.getFindAllCrudMongo);
-    // router.get('/edit-crud-mongo', homeMongoController.getEditCRUDMongo);
-    // router.post('/put-crud-mongo', homeMongoController.putCRUDMongo);
-    // router.get('/delete-crud-mongo', homeMongoController.deleteCRUDMongo);
+    router.get('/crud-mongo', homeController.getCRUD);
+    router.post('/post-crud-mongo', homeMongoController.postCRUDMongo);
+    router.get('/get-crud-mongo', homeMongoController.getFindAllCrudMongo);
+    router.get('/edit-crud-mongo', homeMongoController.getEditCRUDMongo);
+    router.post('/put-crud-mongo', homeMongoController.putCRUDMongo);
+    router.get('/delete-crud-mongo', homeMongoController.deleteCRUDMongo);
 
     return app.use('/', router);
 
