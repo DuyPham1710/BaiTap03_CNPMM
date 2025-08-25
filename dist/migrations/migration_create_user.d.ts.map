@@ -1,0 +1,1 @@
+{"version":3,"file":"migration_create_user.d.ts","sourceRoot":"","sources":["../../src/migrations/migration_create_user.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAa,MAAM,WAAW,CAAC;;yBAGvB,cAAc,KAAG,OAAO,CAAC,IAAI,CAAC;2BA4D5B,cAAc,KAAG,OAAO,CAAC,IAAI,CAAC;;AA7D/D,wBAgEE"}
